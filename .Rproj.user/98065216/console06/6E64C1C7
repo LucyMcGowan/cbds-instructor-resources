@@ -322,3 +322,26 @@ fatal: destination path 'cbds-instructor-resources' already exists and is not an
 ]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git a[Kremote add origin [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kinit
 Reinitialized existing Git repository in /Users/Hadzzz/Google Drive/Research/cbds_instructors/.git/
 ]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git remo[K[K[K[Kadd .
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git commit -m :fir[K[K[K[K"first commit"
+[master 5d83936] first commit
+ 1 file changed, 43 insertions(+), 1 deletion(-)
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ gir [K[Kt push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ gir[Kt remote add origin "https://github.com/ahdvnd/cbds-instructor-resources.git"
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git [K[K[K[Kgit remote add origin "https://github.com/ahdvnd/cbds-instructor-resources.git"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[K
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git pushremote add origin "https://github.com/ahdvnd/cbds-instructor-resources.git"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[Kcommit -m "first commit"add .[K[1Pinit
+Reinitialized existing Git repository in /Users/Hadzzz/Google Drive/Research/cbds_instructors/.git/
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git initpushremote add origin "https://github.com/ahdvnd/cbds-instructor-resources.git"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[Kcommit -m "first commit"add .[K
