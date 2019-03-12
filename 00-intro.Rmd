@@ -1,0 +1,18 @@
+# Course 0: Introduction to Chromebook Data Science {-#intro}
+
+The instructor can use the following activities for this course:
+
+* First and foremost, this session is a great time to talk about data science and what data scientists do. You can assign articles or Youtube videos to help students have some understanding of data science. To start this [video](https://www.youtube.com/watch?v=X3paOmcrTjQ) does a good job explaining some of areas of data science. Note that in explaining data science, you can have a career-oriented approach or have a data-literacy approach. In the career-oriented approach you can focus on data science as an occupation and in the data-literacy approach you can focus on how data science can be used to help us understand the world. Tailor this part depending on the educational level of the students.
+
+* Talk about the program and what the expectations are. You can discuss the length of the program, the requirements, the assignments, etc. We run the program in 4 months including the time spent on courses (3 months) and the career mentoring phase. If you are a K-12 teacher, you can skip the career mentoring phase.
+
+* Talk about how students can customized their Chromebooks. Different programs may use different computers so this section can vary depending on the 
+
+* Explain what the videos at the end of lessons on Leanpub are. These videos use automated voice using Amazon technology and we use these automated voices to make editing the videos faster and more efficient. Explain to your students that the videos are not complimentary or necessary to completing the lessons and are designed for students with disabilities or students who are more comfortable with voice lectures rather than texts. If your students are comfortable with reading the text, they can skip the videos.
+
+* If your students are using Chromebook throughout the program, here's a good time to tell them little fun things about their Chromebooks and why they are chosen for the program (cost and speed since they work on the cloud). These article explains some of the Chromebook tricks: [Top 10 Chromebook tips and tricks](https://www.androidcentral.com/top-10-chromebook-tips-and-tricks) and [8 useful Chromebook tricks you aren't using but should](https://www.komando.com/tips/447946/7-useful-chromebook-tricks-you-arent-using-but-should).
+
+
+* We use [appear.in](www.appear.in) to communicate with our students outside of classroom. appear.in is a user-friendly paltform for chatting with your students and is free for up to 4 participants. If you need to communicate with more than 3 students at the same time, you can pay for a premium service. This [article](https://appear.in/information/education/rachelle-poth/) explains how appear.in can be used in classroom.
+
+

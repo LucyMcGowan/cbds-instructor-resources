@@ -1,0 +1,25 @@
+# Course 2: Google and the Cloud {-#google}
+
+
+
+
+
+
+
+Editing a text file offline
+
+Each learner creates a google doc and invites another learner to the document to work collaboratively (practice different levels of access such as view/comment/edit)
+
+Create a Google calendar event (called “TEST EVENT”) and add others to it
+
+Subscribing to a calendar (subscription to CBDS+ calendar)
+
+How much space do you have left on your google drive?
+
+Delete a file on Google Drive? Let’s see how we can find it
+
+Use a resume template on Google Docs
+
+Create a google sheets document (we’re gonna use it later), add 3 columns (artists, song, rating). List your top 10-30 favorite songs and decide how you rate the song on a scale of 1-5
+
+Assignment: For the next session, make some slides about who you are/what you do/what are your hobbies/etc. You can present it to us next session. 

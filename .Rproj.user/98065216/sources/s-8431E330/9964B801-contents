@@ -1,0 +1,10 @@
+# Course 3: Organizing Data Science Projects {-#organizing}
+
+Go to this link, https://docs.google.com/document/d/1vFQzQ6sRsMJyrqLY49qhEkxvQ0G1Zp_lMZjltpeLvUw/edit?usp=sharing, add your name to the list, and try to make an Rmd file in Rstudio.cloud that when you knit looks similar to this google doc.
+Download the Google Sheet that you created last week as a csv file
+On R Studio Cloud, create a new project and call it my_music_project.
+Create all the folders necessary for a data science project.
+Go to the data folder and upload the csv file that you downloaded on your chromebook
+Create an RMarkdown document with the title Scope of the Project as the headline and a list that says objective 1, objective 2, objective 3. Make sure you save the document
+
+Find the album cover for one of the songs on your list (find the link to the cover on the web) and add the image to your Rmd document. Preview your Rmarkdown document

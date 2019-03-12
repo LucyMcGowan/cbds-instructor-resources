@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552326929471.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3333683C",
+    "lastKnownWriteTime" : 1550710764,
+    "last_content_update" : 1550710764,
+    "path" : "~/Google Drive/Research/cbds_instructors/00-intro.Rmd",
+    "project_path" : "00-intro.Rmd",
+    "properties" : {
+        "cursorPosition" : "4,704",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

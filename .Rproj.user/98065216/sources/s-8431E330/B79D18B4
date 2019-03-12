@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550769429653.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B79D18B4",
+    "lastKnownWriteTime" : 1552363670,
+    "last_content_update" : 1552363670681,
+    "path" : "~/Google Drive/Research/cbds_instructors/06-tidying.Rmd",
+    "project_path" : "06-tidying.Rmd",
+    "properties" : {
+        "cursorPosition" : "28,0",
+        "scrollLine" : "14"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Course 7: Data Visualization | Instructor Resources for Chromebook Data Science</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Course 7: Data Visualization | Instructor Resources for Chromebook Data Science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Course 7: Data Visualization | Instructor Resources for Chromebook Data Science" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Aboozar Hadavand">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="tidying.html">
+<link rel="next" href="getting-data.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>What is this book</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Chromebook Data Science</a></li>
+<li class="chapter" data-level="" data-path="chromebook.html"><a href="chromebook.html"><i class="fa fa-check"></i>Course 1: How to Use a Chromebook</a></li>
+<li class="chapter" data-level="" data-path="google.html"><a href="google.html"><i class="fa fa-check"></i>Course 2: Google and the Cloud</a></li>
+<li class="chapter" data-level="" data-path="organizing.html"><a href="organizing.html"><i class="fa fa-check"></i>Course 3: Organizing Data Science Projects</a></li>
+<li class="chapter" data-level="" data-path="version-control.html"><a href="version-control.html"><i class="fa fa-check"></i>Course 4: Version Control</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html"><i class="fa fa-check"></i>Course 5: Introduction to R</a><ul>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-1-installing-and-uninstalling-packages"><i class="fa fa-check"></i>Exercise 1: Installing and Uninstalling Packages</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-2-using-the-script-editor"><i class="fa fa-check"></i>Exercise 2: Using the script editor</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-4-reverse-a-string-function"><i class="fa fa-check"></i>Exercise 4: Reverse a String Function</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-5-other-short-exercises"><i class="fa fa-check"></i>Exercise 5: Other Short Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tidying.html"><a href="tidying.html"><i class="fa fa-check"></i>Course 6: Data Tidying</a><ul>
+<li class="chapter" data-level="" data-path="tidying.html"><a href="tidying.html#exercise-1-tidying-nba-finals-data"><i class="fa fa-check"></i>Exercise 1: Tidying NBA Finals Data</a></li>
+<li class="chapter" data-level="" data-path="tidying.html"><a href="tidying.html#exercise-2-calculating-age-based-on-birthdate"><i class="fa fa-check"></i>Exercise 2: Calculating Age Based on Birthdate</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html"><i class="fa fa-check"></i>Course 7: Data Visualization</a><ul>
+<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#exercise-1-visualizing-nba-finals-data"><i class="fa fa-check"></i>Exercise 1: Visualizing NBA Finals Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="getting-data.html"><a href="getting-data.html"><i class="fa fa-check"></i>Course 8: Getting Data</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i>Course 9: Data Analysis</a></li>
+<li class="chapter" data-level="" data-path="communication.html"><a href="communication.html"><i class="fa fa-check"></i>Course 10: Written and Oral Communication in Data Science</a></li>
+<li class="chapter" data-level="" data-path="getting-jobs.html"><a href="getting-jobs.html"><i class="fa fa-check"></i>Course 11: Getting a Job in Data Science</a></li>
+<li class="chapter" data-level="" data-path="random.html"><a href="random.html"><i class="fa fa-check"></i>Course 11: Random Stuff</a><ul>
+<li class="chapter" data-level="" data-path="random.html"><a href="random.html#classroom-activity-1"><i class="fa fa-check"></i>Classroom activity 1</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Chromebook Data Science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="visualization" class="section level1 unnumbered">
+<h1>Course 7: Data Visualization</h1>
+<div id="exercise-1-visualizing-nba-finals-data" class="section level2 unnumbered">
+<h2>Exercise 1: Visualizing NBA Finals Data</h2>
+<p>In this exercise we will work with <a href="https://www.kaggle.com/daverosenman/nba-finals-team-stats">NBA final teams stats</a> on Kaggle. We have used this data before in the <a href="tidying.html#tidying"><strong>??</strong></a> course. There is two .csv files. The ‘champs.csv’ file contains game-by-game team totals for the championship team from every finals game between 1980 and 2017. The ‘runnerups.csv’ contains game-by-game team totals for the runner-up team from every finals game between 1980 and 2017. The 1980 NBA Finals was the first Finals series since the NBA added the three point line.</p>
+<p>This exercise is inpired by two kernells on Kaggle that can be found <a href="https://www.kaggle.com/carterallen/nba-championship-data">here</a> and <a href="https://www.kaggle.com/daverosenman/nba-finals-three-point-stats-1980-2017">here</a>. Ask your stduent to download the data on Kaggle or on our Github repository for this guide.</p>
+<div class="note">
+<p>In order to download data on Kaggle, students are required to create a Kaggle account. They can do so by linking their Google account.</p>
+</div>
+<p>The first step is to import the data into R. Since importing .csv files is in a future lesson, tell your students the commands the need to import the .csv files. We are going to use <code>read_csv</code> command from the <strong>readr</strong> package. Ask them to save the two files in two separate objects. Here we called them <code>champs</code> and <code>runners</code>. Like before, we will tidy the data a bit to fix the team name issues and converting the columns <code>Win</code> and <code>Home</code> to factors.</p>
+<pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">echo =</span> <span class="ot">TRUE</span>)
+<span class="kw">library</span>(tidyverse)
+<span class="co"># importing the data</span>
+champs &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="dt">file =</span> <span class="st">&quot;./data/nba/championsdata.csv&quot;</span>)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   .default = col_integer(),
+##   Team = col_character(),
+##   FGP = col_double(),
+##   TPP = col_double(),
+##   FTP = col_double()
+## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">runners &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="dt">file =</span> <span class="st">&quot;./data/nba/runnerupsdata.csv&quot;</span>)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   .default = col_integer(),
+##   Team = col_character(),
+##   FGP = col_double(),
+##   TPP = col_double(),
+##   FTP = col_double()
+## )
+## See spec(...) for full column specifications.</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># fix the heat and warriors</span>
+champs &lt;-<span class="st"> </span>champs <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Team =</span> <span class="kw">ifelse</span>(Team <span class="op">==</span><span class="st"> &quot;Warriorrs&quot;</span>,<span class="st">&quot;Warriors&quot;</span>,Team)) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Team =</span> <span class="kw">ifelse</span>(Team <span class="op">==</span><span class="st"> &quot;&#39;Heat&#39;&quot;</span>,<span class="st">&quot;Heat&quot;</span>,Team)) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Win =</span> <span class="kw">as.factor</span>(Win)) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Home =</span> <span class="kw">as.factor</span>(Home))
+
+runners &lt;-<span class="st"> </span>runners <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Team =</span> <span class="kw">ifelse</span>(Team <span class="op">==</span><span class="st"> &quot;Warriorrs&quot;</span>,<span class="st">&quot;Warriors&quot;</span>,Team)) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Team =</span> <span class="kw">ifelse</span>(Team <span class="op">==</span><span class="st"> &quot;&#39;Heat&#39;&quot;</span>,<span class="st">&quot;Heat&quot;</span>,Team)) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Win =</span> <span class="kw">as.factor</span>(Win)) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Home =</span> <span class="kw">as.factor</span>(Home))
+<span class="co">## bind the two data sets together</span>
+<span class="co">## and add a column that shows champions vs. runnerups call it rank</span>
+allteams &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(<span class="st">&quot;Champion&quot;</span> =<span class="st"> </span>champs, <span class="st">&quot;Runner&quot;</span> =<span class="st"> </span>runners, <span class="dt">.id =</span> <span class="st">&quot;rank&quot;</span>)</code></pre>
+<p>After importing and wrangling the data, ask your students to figure out whether <em>champion</em> teams are likely to score more at home or away. Ask them to write the code in a pipe and present the table using the <strong>knitr</strong> package.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## loading the knitr package</span>
+<span class="kw">library</span>(knitr)
+<span class="co">## does home has an advantage</span>
+allteams <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="co">## first filtering so we only look at champion teams</span>
+<span class="st">    </span><span class="kw">filter</span>(rank <span class="op">==</span><span class="st"> &quot;Champion&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="co">## grouping by the variable home</span>
+<span class="st">    </span><span class="kw">group_by</span>(Home) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="co">## calculating the average of points scored</span>
+<span class="st">    </span><span class="kw">summarise</span>(<span class="dt">avg =</span> <span class="kw">mean</span>(PTS)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="co">## presenting the table using the knitr package</span>
+<span class="st">    </span><span class="kw">kable</span>(<span class="st">&quot;html&quot;</span>)</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Home
+</th>
+<th style="text-align:right;">
+avg
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+98.21101
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:right;">
+103.31532
+</td>
+</tr>
+</tbody>
+</table>
+<p>Ask your students what this means. To make the table above make more sense, ask your students to use the appropriate function for changing factor levels so that the column <code>Home</code> is equal to <code>Home</code> if its value is <code>1</code> and is equal to <code>Away</code> if its value is <code>0</code>. Your students should use the function <code>fct_recode()</code> in order to do that. Now they know that champion teams on average score 98.2 points at away games and 103.3 points at home games.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## loading the knitr package</span>
+<span class="kw">library</span>(knitr)
+<span class="co">## does home has an advantage</span>
+allteams <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="co">## first filtering so we only look at champion teams</span>
+<span class="st">    </span><span class="kw">filter</span>(rank <span class="op">==</span><span class="st"> &quot;Champion&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="co">## changing factor levels so they mean better</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Home =</span> <span class="kw">fct_recode</span>(Home, <span class="dt">Home =</span> <span class="st">&quot;1&quot;</span>, <span class="dt">Away =</span> <span class="st">&quot;0&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="co">## grouping by the variable home</span>
+<span class="st">    </span><span class="kw">group_by</span>(Home) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="co">## calculating the average of points scored</span>
+<span class="st">    </span><span class="kw">summarise</span>(<span class="dt">avg =</span> <span class="kw">mean</span>(PTS)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="co">## presenting the table using the knitr package</span>
+<span class="st">    </span><span class="kw">kable</span>(<span class="st">&quot;html&quot;</span>)</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Home
+</th>
+<th style="text-align:right;">
+avg
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Away
+</td>
+<td style="text-align:right;">
+98.21101
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Home
+</td>
+<td style="text-align:right;">
+103.31532
+</td>
+</tr>
+</tbody>
+</table>
+<p>Now, we are going to do some data visualization using the package <strong>ggplot2</strong>. Ask them to first find the column that contains the three point field goals from the data guide. The column is <code>TP</code>. Then ask them to show the average number of three points per year using a bar plot. Note that they will have to use the <code>geom_bar()</code> function from the <strong>ggplot2</strong> package. Ask them to use the title “NBA Finals, 1980-2018” as the title of the graph and “Average Three Point Field Goals” as the label for the Y axis. Note that they will have to use the argument <code>stat = 'identity'</code> inside the <code>geom_bar()</code> function.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> allteams, <span class="kw">aes</span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> TP)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">ggtitle</span>(<span class="st">&quot;NBA Finals, 1980-2018&quot;</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">ylab</span>(<span class="st">&#39;Average Three Point Field Goals&#39;</span>) </code></pre>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p>Now, ask them two repeat the pervious graph but this time, have the bar plot (with different colors) for champion and runner up teams. In other words, they will have to use the argument <code>fill</code> and make it equal to the newly created column <code>rank</code>. Then ask them to interpret the graph. What is obvious is that champion teams do a much better job at three-pointers.</p>
+<pre class="sourceCode r"><code class="sourceCode r">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> allteams, <span class="kw">aes</span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> TP, <span class="dt">fill =</span> rank)) <span class="op">+</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">ggtitle</span>(<span class="st">&quot;NBA Finals, 1980-2018&quot;</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">ylab</span>(<span class="st">&#39;Average Three Point Field Goals&#39;</span>)
+p</code></pre>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p>Now, ask them to find the right function in <strong>ggplot2</strong> that makes the Y axix ticks (the years) with an angle (45 degrees). They will have to use the <code>theme()</code> argument and inside it they will have to use the <code>element_text()</code> function to specify the angle.</p>
+<pre class="sourceCode r"><code class="sourceCode r">p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle=</span><span class="dv">45</span>, <span class="dt">hjust =</span> <span class="dv">1</span>, <span class="dt">vjust =</span> <span class="dv">1</span>))</code></pre>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p>In the last exercises, we are going to work with scatter plots. Ask your students have a scatter plot with number of 3 pointers per game on the vertical axis and year on the horizontal axis. Note that the two columns they need to use are <code>TP</code> and <code>Year</code>. Ask them to have two different colors for champions and runner ups. Ask them to make the point sizes equal to 1.</p>
+<pre class="sourceCode r"><code class="sourceCode r">p2 =<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> allteams, <span class="kw">aes</span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> TP, <span class="dt">color =</span> rank)) <span class="op">+</span>
+<span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">1</span>) <span class="op">+</span>
+<span class="st">    </span><span class="kw">ylab</span>(<span class="st">&#39;3 Pointers per game&#39;</span>)
+
+p2</code></pre>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
+<p>Your students are now required to use the <code>geom_smooth()</code> function from the <strong>ggplot2</strong> package. This function help your students in seeing patterns. This is an example of the <code>geom_smooth()</code> function.</p>
+<div class="figure">
+<img src="files/07_visualization_geom_smooth.png" alt="geom_smooth() function, linear approximation" />
+<p class="caption"><code>geom_smooth()</code> function, linear approximation</p>
+</div>
+<p>When using <code>geom_smooth()</code>, the argument <code>method</code> has to be specified otherwise its default value will be used. Ask your students to set <code>method</code> as <code>'loess'</code>). The shaded areas around the lines are the confidence intervals which can be disabled by using the argument <code>se = FALSE</code>.</p>
+<p>geom_smooth() and stat_smooth() are effectively aliases: they both use the same arguments. Use stat_smooth() if you want to display the results with a non-standard geom. Ask students what the two lines suggest? What is the trend over time?</p>
+<pre class="sourceCode r"><code class="sourceCode r">p2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>)</code></pre>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tidying.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["cbds_instructors.pdf", "cbds_instructors.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

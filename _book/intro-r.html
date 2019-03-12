@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Course 5: Introduction to R | Instructor Resources for Chromebook Data Science</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Course 5: Introduction to R | Instructor Resources for Chromebook Data Science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Course 5: Introduction to R | Instructor Resources for Chromebook Data Science" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Aboozar Hadavand">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="version-control.html">
+<link rel="next" href="tidying.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>What is this book</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Chromebook Data Science</a></li>
+<li class="chapter" data-level="" data-path="chromebook.html"><a href="chromebook.html"><i class="fa fa-check"></i>Course 1: How to Use a Chromebook</a></li>
+<li class="chapter" data-level="" data-path="google.html"><a href="google.html"><i class="fa fa-check"></i>Course 2: Google and the Cloud</a></li>
+<li class="chapter" data-level="" data-path="organizing.html"><a href="organizing.html"><i class="fa fa-check"></i>Course 3: Organizing Data Science Projects</a></li>
+<li class="chapter" data-level="" data-path="version-control.html"><a href="version-control.html"><i class="fa fa-check"></i>Course 4: Version Control</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html"><i class="fa fa-check"></i>Course 5: Introduction to R</a><ul>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-1-installing-and-uninstalling-packages"><i class="fa fa-check"></i>Exercise 1: Installing and Uninstalling Packages</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-2-using-the-script-editor"><i class="fa fa-check"></i>Exercise 2: Using the script editor</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-4-reverse-a-string-function"><i class="fa fa-check"></i>Exercise 4: Reverse a String Function</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-5-other-short-exercises"><i class="fa fa-check"></i>Exercise 5: Other Short Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tidying.html"><a href="tidying.html"><i class="fa fa-check"></i>Course 6: Data Tidying</a><ul>
+<li class="chapter" data-level="" data-path="tidying.html"><a href="tidying.html#exercise-1-tidying-nba-finals-data"><i class="fa fa-check"></i>Exercise 1: Tidying NBA Finals Data</a></li>
+<li class="chapter" data-level="" data-path="tidying.html"><a href="tidying.html#exercise-2-calculating-age-based-on-birthdate"><i class="fa fa-check"></i>Exercise 2: Calculating Age Based on Birthdate</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html"><i class="fa fa-check"></i>Course 7: Data Visualization</a><ul>
+<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#exercise-1-visualizing-nba-finals-data"><i class="fa fa-check"></i>Exercise 1: Visualizing NBA Finals Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="getting-data.html"><a href="getting-data.html"><i class="fa fa-check"></i>Course 8: Getting Data</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i>Course 9: Data Analysis</a></li>
+<li class="chapter" data-level="" data-path="communication.html"><a href="communication.html"><i class="fa fa-check"></i>Course 10: Written and Oral Communication in Data Science</a></li>
+<li class="chapter" data-level="" data-path="getting-jobs.html"><a href="getting-jobs.html"><i class="fa fa-check"></i>Course 11: Getting a Job in Data Science</a></li>
+<li class="chapter" data-level="" data-path="random.html"><a href="random.html"><i class="fa fa-check"></i>Course 11: Random Stuff</a><ul>
+<li class="chapter" data-level="" data-path="random.html"><a href="random.html#classroom-activity-1"><i class="fa fa-check"></i>Classroom activity 1</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Chromebook Data Science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro-r" class="section level1 unnumbered">
+<h1>Course 5: Introduction to R</h1>
+<p>One of the most important exercises for this course is to make students comfortable with RStudio and RStudio cloud. These are some of the exercises you can ask students to do during the class.</p>
+<ul>
+<li>Uploading files on RStudio.cloud</li>
+<li>Exporting (downloading) files on RStudio.cloud</li>
+<li>Renaming files in the Files section</li>
+<li>Deleting files in the Files section</li>
+<li>Creating new folders in the Files section</li>
+<li>Looking at the packages installed</li>
+<li>Looking at the environment through the Environment tab</li>
+<li>Looking at history through the History tab</li>
+<li>Browsing over the Console and the Terminal</li>
+<li>Creating a new R script file</li>
+<li>Creating a new R Markdown file</li>
+<li>Opening a new R script file</li>
+</ul>
+<div id="exercise-1-installing-and-uninstalling-packages" class="section level2 unnumbered">
+<h2>Exercise 1: Installing and Uninstalling Packages</h2>
+<div class="tip">
+<p>Level: Easy</p>
+</div>
+<p>Start with telling students what CRAN is. CRAN hosts additional packages that sit on top of the core (base) R software. While there are thousands of packages on CRAN, a lot of the packages are hosted on other hosting sites such as Github. In this exercise, we will ask students to install packages from both CRAN and Github.</p>
+<p>First, ask students to install the <strong>devtools</strong> package. Ask them to use the package name without the quotations as below:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(devtools)
+<span class="co"># Error in install.packages : object &#39;devtools&#39; not found</span></code></pre>
+<p>They will get an error saying the “object ‘devtools’ not found”. Remind them when we install packages, we have to put the package name in quotations. So the correct way is:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</code></pre>
+<p>The package <strong>Devtools</strong> is hosted on CRAN, therefore, we don’t have to specify where the package is hosted. We just have to pass the name of the package to the function <code>install.packages()</code> to install it. Now ask them to load the package. Remind them that to load packages we use the following function:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(<span class="kw">library</span>(devtools))</code></pre>
+<p>Note that when we load packages we don’t necessarily have to use quotation marks. It is recommended, however, that to use quotations for both <code>install.packages()</code> and <code>library()</code> functions. The package <strong>devtools</strong> makes package development easier. One of the applications of the package is that it allows us to install packages that are not on CRAN. Now ask students to install the package <strong>knockknockjokes</strong> from github using. The link to the Github repo of the package is <a href="www.github.com/psolymos/KnockKnockJokes">www.github.com/psolymos/KnockKnockJokes</a>. Ask them how they are supposed to install a package from Github.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;psolymos/KnockKnockJokes&quot;</span>))</code></pre>
+<pre><code>## Downloading GitHub repo psolymos/KnockKnockJokes@master
+## from URL https://api.github.com/repos/psolymos/KnockKnockJokes/zipball/master</code></pre>
+<pre><code>## Installing KnockKnockJokes</code></pre>
+<pre><code>## &#39;/Library/Frameworks/R.framework/Resources/bin/R&#39; --no-site-file  \
+##   --no-environ --no-save --no-restore --quiet CMD INSTALL  \
+##   &#39;/private/var/folders/6c/94269x114tlc1x1c901c6_8m0000gn/T/RtmpBgxDis/devtools11d1c3ff9f456/psolymos-KnockKnockJokes-5096f51&#39;  \
+##   --library=&#39;/Library/Frameworks/R.framework/Versions/3.4/Resources/library&#39;  \
+##   --install-tests</code></pre>
+<pre><code>## </code></pre>
+<p>Note that we have to specify where the package is hosted when we use the command <code>install_github()</code> from the package <strong>devtools</strong>. psolymos is the username of the user who developed the package and KnockKnockJokes is the name of the repository. Now ask students to load the package.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(<span class="kw">library</span>(KnockKnockJokes))</code></pre>
+<p>This package is very simple. It basically tells you knock knock jokes. You can ask students to browse through the package documentation on <a href="https://github.com/psolymos/KnockKnockJokes">its Github repo</a> and see what function they should use for a joke. Here’s one for a random joke:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">KnockKnock</span>()</code></pre>
+<pre><code>## Knock-knock!
+##  Who&#39;s there?
+## Whale.
+##  Whale who?
+## Whale will you let me in or won&#39;t you?</code></pre>
+<p>As an assignment (in class or at home), you can ask students to find an R package they find interesting and tell the class about it.</p>
+</div>
+<div id="exercise-2-using-the-script-editor" class="section level2 unnumbered">
+<h2>Exercise 2: Using the script editor</h2>
+<div class="tip">
+<p>Level: Easy</p>
+</div>
+<p>Ask students to go to the my_music_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy_code and save it as exploratory_analysis. Ask them to install and load the package <strong>dplyr</strong> in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter. Tell your students to type in <code>2 + 2</code> in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line.</p>
+<p>str_view(names, “^M”)
+str_view(names, “M$”)</p>
+<p>str_detect()
+str_count()
+str_subset()</p>
+<p>Logicals
+cbds_names &lt;- c(“Andre”, …… “Ashley”, “Aboozar”)
+startsWith(cbds_names, “An”)
+cbds_age &lt;- c(18, ……., 36)
+any(cbds_ages &gt;= 30)
+all(cbds_ages &gt;= 17)</p>
+<p>Go to this IMDB link: <a href="https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating,desc" class="uri">https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating,desc</a>
+In this exercise we are going to create a data frame that has four columns: movie name, year, rating, genre. Create repo in github called imdb_movie_analysis and clone it to a new project on RSC. Create all the folder structure and within your code folder, create a script file called exploratory analysis. Create a data frame with these columns and enter the data from the top 10 movies. Call your data frame top_ten_movies. You can choose your own column names.
+Call the column that contains the information about the movie title
+Going back to your imdb data, What is the class of the column that contains the movie names?
+What’s the class of the column with the year the movie was made?
+What’s the difference between the maximum and minimum rating among the top 10 movies?
+What is the dimension of your data frame?
+Change the column names to this: movie_title, movie_year, movie_rating, movie_genre
+View the first 5 rows of the data frame
+Install the package skimr and using the function skim() look at the summary of the data
+Without checking manually, see if the movie “Groundhog Day” is among the top 10 movies.
+Count the number of movies that are made after your birth year.
+How many of the movies are in the genre Action.
+Create a list with three elements. First element contains your top 5 most favorite movies (as characters). The second element contains the number of states you have traveled to (as.integer). Note that each element has a different size and different class and this is the beauty of lists in R.
+Call the first element of the list (your top 5 movies)
+Replace the first row of the column movie_rating with NA. Now, what is the maximum rating in your data? Or mean?</p>
+</div>
+<div id="exercise-4-reverse-a-string-function" class="section level2 unnumbered">
+<h2>Exercise 4: Reverse a String Function</h2>
+<div class="tip">
+<p>Level: Difficult</p>
+</div>
+<p>Ask your students to write a function that takes a string and returns the reverse version of the string. So the function returns the string “book” as “koob”. This function is a simple version of a decoding function. Let’s decompose this problem. There are probably various ways to do this problem. One way to go about solving this problem is to decompose the words into characters. Then reverse the order of the characters and then paste them back together. The first step can be done using the <code>str_split()</code> function from the <strong>stringr</strong> package.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(stringr)
+word &lt;-<span class="st"> &quot;book&quot;</span>
+word_decom &lt;-<span class="st"> </span><span class="kw">str_split</span>(<span class="st">&quot;book&quot;</span>, <span class="st">&quot;&quot;</span>)
+word_decom</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;b&quot; &quot;o&quot; &quot;o&quot; &quot;k&quot;</code></pre>
+<p>The <code>word_decom</code> object is a list and its first element is a vector of all the character that make up the word <em>book</em>. If we have a vector, we can use the function <code>rev()</code> to reverse the order of its elements. So <code>rev(c(1,2,3))</code> will return <code>3 2 1</code>. So to reverse the order of characters in the object <code>word_decom</code> we write</p>
+<pre class="sourceCode r"><code class="sourceCode r">word_decom_rev &lt;-<span class="st"> </span><span class="kw">rev</span>(word_decom[[<span class="dv">1</span>]])
+word_decom_rev</code></pre>
+<pre><code>## [1] &quot;k&quot; &quot;o&quot; &quot;o&quot; &quot;b&quot;</code></pre>
+<p><code>[[1]]</code> is for calling the vector in the list. Now, we have the decomposed word reversed. But the result is a vector of characters and not a string. To create a string from all the characters, we can use the function <code>paste()</code> as we have used before.</p>
+<pre class="sourceCode r"><code class="sourceCode r">word_rev &lt;-<span class="st"> </span><span class="kw">paste</span>(word_decom_rev, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)
+word_rev</code></pre>
+<pre><code>## [1] &quot;koob&quot;</code></pre>
+<p>Your students now can combine all the steps and create the function. This would be the simplest form of the functino.</p>
+<pre class="sourceCode r"><code class="sourceCode r">word_reverse &lt;-<span class="st"> </span><span class="cf">function</span>(x){
+    word_decom &lt;-<span class="st"> </span><span class="kw">str_split</span>(x, <span class="st">&quot;&quot;</span>)
+    word_decom_rev &lt;-<span class="st"> </span><span class="kw">rev</span>(word_decom[[<span class="dv">1</span>]])
+    word_rev &lt;-<span class="st"> </span><span class="kw">paste</span>(word_decom_rev, <span class="dt">collapse =</span> <span class="st">&quot;&quot;</span>)
+    <span class="kw">return</span>(word_rev)
+}
+<span class="kw">word_reverse</span>(<span class="st">&quot;chromebook&quot;</span>)</code></pre>
+<pre><code>## [1] &quot;koobemorhc&quot;</code></pre>
+</div>
+<div id="exercise-5-other-short-exercises" class="section level2 unnumbered">
+<h2>Exercise 5: Other Short Exercises</h2>
+<div class="tip">
+<p>Level: Easy to moderate</p>
+</div>
+<p>Write a function that takes user’s name and returns “Hello, Name!”</p>
+<pre class="sourceCode r"><code class="sourceCode r">hello &lt;-<span class="st"> </span><span class="cf">function</span>(name){
+    <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;Hello &quot;</span>, name, <span class="st">&quot;!&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))
+}</code></pre>
+<p>Write a function that takes number 1 and number 2 and checks whether number 1 is divisible by number 2. If divisible, returns a message saying the first number is divisible by the second number and if not returns a message saying the first number is not divisible by the second number.</p>
+<pre class="sourceCode r"><code class="sourceCode r">check_division &lt;-<span class="st"> </span><span class="cf">function</span>(num1, num2){
+    <span class="cf">if</span> (num1 <span class="op">%%</span><span class="st"> </span>num2 <span class="op">==</span><span class="st"> </span><span class="dv">0</span>) {
+        <span class="kw">print</span>(<span class="kw">paste</span>(num1, <span class="st">&quot; is divisible by &quot;</span>, num2, <span class="st">&quot;.&quot;</span>, <span class="dt">sep=</span><span class="st">&quot;&quot;</span>))
+    } <span class="cf">else</span> {
+        <span class="kw">print</span>(<span class="kw">paste</span>(num1, <span class="st">&quot; is NOT divisible by &quot;</span>, num2, <span class="st">&quot;.&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))
+    }
+}</code></pre>
+<p>In the function above, check to make sure number 1 is bigger than number 2. If not, halt and show a message that the first number should be larger than the second number.</p>
+<pre class="sourceCode r"><code class="sourceCode r">check_division &lt;-<span class="st"> </span><span class="cf">function</span>(num1, num2){
+    <span class="cf">if</span>(num1 <span class="op">&lt;</span><span class="st"> </span>num2) <span class="kw">stop</span>(<span class="st">&quot;The first number should be larger than the second number.&quot;</span>)
+    <span class="cf">else</span> {
+       <span class="cf">if</span> (num1 <span class="op">%%</span><span class="st"> </span>num2 <span class="op">==</span><span class="st"> </span><span class="dv">0</span>) {
+        <span class="kw">print</span>(<span class="kw">paste</span>(num1, <span class="st">&quot; is divisible by &quot;</span>, num2, <span class="st">&quot;.&quot;</span>, <span class="dt">sep=</span><span class="st">&quot;&quot;</span>))
+    } <span class="cf">else</span> {
+        <span class="kw">print</span>(<span class="kw">paste</span>(num1, <span class="st">&quot; is NOT divisible by &quot;</span>, num2, <span class="st">&quot;.&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))
+    } 
+    }
+}</code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="version-control.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tidying.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["cbds_instructors.pdf", "cbds_instructors.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

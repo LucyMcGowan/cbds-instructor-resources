@@ -1,0 +1,29 @@
+# Course 1: How to Use a Chromebook {-#chromebook}
+
+Instructors can skip this course if students are not using Google Chromebooks. If your studnets use Chromebooks, use the following activities for making your student more comfortable with their computers.
+
+* A lot of times, we notice that students do not know about keyboard shortcuts that can be extremely helpful. This session is a good opportunity to teach them how to use. A lot of these keyboard shortcuts are platform independent, i.e., one can use them across Chromebooks, PCs, or Macs. Follow this [link](https://www.thegeekstuff.com/2016/04/chromebook-keyboard-shortcuts/) for a list of usefule keyboard shortcuts. It's a long list so if you just want to tell them about the most important ones, focus on `Ctrl + a`, `Ctrl + c`, `Ctrl + p`, `Ctrl + z`, and `Ctrl + f`.
+
+* There are also some tricks that students can learn about their Chromebooks. This is our favorite from [EdTechTeam](https://twitter.com/edtechteam).
+
+![Chromebook cheatsheet](./files/00_chromebook_cheatsheet.jpeg)
+
+* Depending on how you would like to communicate with your students outside of the classroom, here is a good place to introduce them the tool and make them comfortable with it. We use [Slack](https://slack.com/) for creating a community outside of classroom so students can ask their questions and get answers from you or their classmates. There are two main advantages for using Slack: 1) all conversations are kept in one place rather than all over your email so it's easy to review conversation history. 2) Slack provides _public_ and _private_ channels so you can post things that everyone can see or post things that only specific students can see. It's also easy to share links, code, and use emojis on Slack so it's our absolute favorite. It's mainly free (unless you need to use specific features) and there is also discounts for education purposes. Follow this [link](https://get.slack.help/hc/en-us/articles/206646877-Slack-for-Education) to learn about Slack for Education. If you want to use Slack, create an account and a channel for your classroom/school and during the classroom ask students to ask a question on the general channel.
+
+* One of the things that will be handy, is for students to know how to capture a screenshot on their Chromebook. In this exercise, ask students to capture a screenshop on their computers and share that screetshot with you on Slack. This feature will be super helpful for when they need to ask your questions remotely and you need to see their code.
+
+* Another tool that we use is an Chrome extension called [Loom](https://www.useloom.com/). In Loom, you or your students can record/capture their screen which can be extremely helpful in explaining things step by step. So it's a tool that you may use often (and not students) but even students can aks you questions on Loom but can show you step by step how thye do it. We use Loom to guide students through specific instruction (how to debug their code or how to perform other tasks). Loom is also free for the most part. Watch the following video to learn about how to use Loom in your classroom.
+
+```{r echo=FALSE}
+knitr::include_url("https://www.youtube.com/watch?v=6pJaW2V0RbM")
+```
+
+* Teach your students about some of the most important apps they should use on their Chromebooks. We have mentioned some of these apps in this course but you can add your favorites to the list. You can also give an assignment that by next class, each students should find one app they think it's useful/cool that others should use as well. There are a lot of resources and lists on the most useful apps on Chromebook.
+
+* Ask your students in the class to practice installing and uninstalling an app from the Google Play store. To use Google Play store, your students may need to create an account so you can help them with that as well.
+
+* While we mentoion this in this course, ask your student to practice finding how much storage they have on their Chromebooks. 
+
+* Students should be comfortable using the Chrome browser by now. If you think they're not, this is a good opportunity to give them more practice. One of the exercises you can assign, is to practice bookmark favorite websites. Ask your students to go to a website they regularly check and bookmark that webpage. Then ask them to close the tab and go to the same webpage using the bookmark menu on the Chrome browser.
+
+* One of the features of the Chrome browser is that it can save passwords so the user does not have to enter them every time they visit a website. Make sure you remind students of this feature and help them make an informed decision about whether they should or should not use this feature. This New York Times [article](https://www.nytimes.com/2017/01/06/technology/personaltech/managing-your-passwords-with-a-web-browser.html) discuss that. This [article](https://support.google.com/chrome/answer/95606?co=GENIE.Platform%3DDesktop&hl=en) by Google also explains how to manage saved passwords on Google Chrome. Tell them they can sync their devices so the passwords are saved across all devices. They will have to turn sunc on in Chrome. [This](https://support.google.com/chrome/answer/185277) is how. 

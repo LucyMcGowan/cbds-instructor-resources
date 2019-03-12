@@ -1,0 +1,36 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+div.note {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #FBF8E5 5px center/3em no-repeat;
+  background-image: url("./files/images/note.png");
+}
+
+div.warning {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f8cdd5 5px center/3em no-repeat;
+  background-image: url("./files/images/warning.png");
+}
+
+div.tip {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #cdeaf8 5px center/3em no-repeat;
+  background-image: url("./files/images/tip.png");
+}
