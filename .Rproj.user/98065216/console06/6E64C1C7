@@ -2,3 +2,281 @@
 Initialized empty Git repository in /Users/Hadzzz/Google Drive/Research/cbds_instructors/.git/
 ]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git remod[Kte d[Kadd url "https://github.com/ahdvnd/cbds-instructor-resources.git"
 ]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git add .
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git commit -m "first commit"
+[master (root-commit) cdb67cf] first commit
+ 220 files changed, 12703 insertions(+)
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/98065216/console06/6E64C1C7
+ create mode 100644 .Rproj.user/98065216/console06/6E64C1C7.env
+ create mode 100644 .Rproj.user/98065216/console06/INDEX001
+ create mode 100644 .Rproj.user/98065216/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/98065216/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/98065216/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/98065216/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/98065216/rmd-outputs
+ create mode 100644 .Rproj.user/98065216/saved_source_markers
+ create mode 100644 .Rproj.user/98065216/sources/prop/1E1EA878
+ create mode 100644 .Rproj.user/98065216/sources/prop/24601AF1
+ create mode 100644 .Rproj.user/98065216/sources/prop/31D5808F
+ create mode 100644 .Rproj.user/98065216/sources/prop/3D4FCE98
+ create mode 100644 .Rproj.user/98065216/sources/prop/4DED47A
+ create mode 100644 .Rproj.user/98065216/sources/prop/4ECA854B
+ create mode 100644 .Rproj.user/98065216/sources/prop/54682C09
+ create mode 100644 .Rproj.user/98065216/sources/prop/54AA9AA9
+ create mode 100644 .Rproj.user/98065216/sources/prop/5AA78F02
+ create mode 100644 .Rproj.user/98065216/sources/prop/60E8B001
+ create mode 100644 .Rproj.user/98065216/sources/prop/623B420A
+ create mode 100644 .Rproj.user/98065216/sources/prop/6CFC0A82
+ create mode 100644 .Rproj.user/98065216/sources/prop/6F810769
+ create mode 100644 .Rproj.user/98065216/sources/prop/7486CD03
+ create mode 100644 .Rproj.user/98065216/sources/prop/794B5881
+ create mode 100644 .Rproj.user/98065216/sources/prop/96ED2B21
+ create mode 100644 .Rproj.user/98065216/sources/prop/98146BA
+ create mode 100644 .Rproj.user/98065216/sources/prop/9BE94940
+ create mode 100644 .Rproj.user/98065216/sources/prop/AC6004FF
+ create mode 100644 .Rproj.user/98065216/sources/prop/B1ACD10F
+ create mode 100644 .Rproj.user/98065216/sources/prop/B30F5DA3
+ create mode 100644 .Rproj.user/98065216/sources/prop/B71CA671
+ create mode 100644 .Rproj.user/98065216/sources/prop/BE5FA01B
+ create mode 100644 .Rproj.user/98065216/sources/prop/C941CC1D
+ create mode 100644 .Rproj.user/98065216/sources/prop/D29199CB
+ create mode 100644 .Rproj.user/98065216/sources/prop/D7889F39
+ create mode 100644 .Rproj.user/98065216/sources/prop/DB473CC5
+ create mode 100644 .Rproj.user/98065216/sources/prop/DBCEA933
+ create mode 100644 .Rproj.user/98065216/sources/prop/F7AFC358
+ create mode 100644 .Rproj.user/98065216/sources/prop/INDEX
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/19C4C106-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/1EDBB95-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/2380569C-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/3333683C
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/3333683C-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/5CB1352E-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/7017331-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/74D4FD1E-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/7AA1143E-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/824DE576
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/824DE576-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/9964B801
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/9964B801-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/9F573714-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/A09DF658-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/B79D18B4
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/B79D18B4-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/CC5D14B0
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/CC5D14B0-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/DD57184C
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/DD57184C-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/E62A8D29
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/E62A8D29-contents
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/1E2C5484-11-getting-jobs/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/2ED6C717-06-tidying/1/98065216281C59AF/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/2ED6C717-06-tidying/1/980652168431E330/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/2ED6C717-06-tidying/1/s/c5yytluepihqs/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/2ED6C717-06-tidying/1/s/c5yytluepihqs/000003.error
+ create mode 100644 .Rproj.user/shared/notebooks/2ED6C717-06-tidying/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/44278AB6-10-communication/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/6662233F-03-organizing/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/6AB8EB1A-04-version-control/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/6C5F833B-02-google/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/8A6B870F-08-getting-data/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/8DFC16B4-index/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/8F0061BB-09-analysis/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/9DED5BE-05-intro-r/1/980652168431E330/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/9DED5BE-05-intro-r/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/B6B64419-12-random/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/CA8E7E72-01-chromebook/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/DC398026-00-intro/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/980652168431E330/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/cnvfcxpn7deg7/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/cnvfcxpn7deg7/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/cnvfcxpn7deg7/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/ctuj1k542wbdr/00000c.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/ctuj1k542wbdr/00000c.png
+ create mode 100644 .Rproj.user/shared/notebooks/E915EAB1-07-visualization/1/s/ctuj1k542wbdr/00000c.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 00-intro.Rmd
+ create mode 100644 01-chromebook.Rmd
+ create mode 100644 02-google.Rmd
+ create mode 100644 03-organizing.Rmd
+ create mode 100644 04-version-control.Rmd
+ create mode 100644 05-intro-r.Rmd
+ create mode 100644 06-tidying.Rmd
+ create mode 100644 07-visualization.Rmd
+ create mode 100644 08-getting-data.Rmd
+ create mode 100644 09-analysis.Rmd
+ create mode 100644 10-communication.Rmd
+ create mode 100644 11-getting-jobs.Rmd
+ create mode 100644 12-random.Rmd
+ create mode 100644 15-references.Rmd
+ create mode 100644 README.md
+ create mode 100644 _book/analysis.html
+ create mode 100644 _book/applications.html
+ create mode 100644 _book/cbds_instructors.epub
+ create mode 100644 _book/cbds_instructors.pdf
+ create mode 100644 _book/cbds_instructors.tex
+ create mode 100644 _book/cbds_instructors_files/figure-html/nice-fig-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-11-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-12-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-13-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-14-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-15-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-27-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-28-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-29-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-3-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-3-2.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-3-3.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-3-4.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-30-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-31-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-34-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-35-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-36-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-37-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-38-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-5-2.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-5-3.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-6-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-6-2.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-6-3.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-6-4.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-7-2.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-7-3.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-7-4.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 _book/cbds_instructors_files/figure-html/unnamed-chunk-9-1.png
+ create mode 100644 _book/chromebook.html
+ create mode 100644 _book/communication.html
+ create mode 100644 _book/course-0-introduction-to-chromebook-data-science-intro.html
+ create mode 100644 _book/files/00_chromebook_cheatsheet.jpeg
+ create mode 100644 _book/files/07_visualization_geom_smooth.png
+ create mode 100755 _book/files/images/caution.png
+ create mode 100755 _book/files/images/important.png
+ create mode 100755 _book/files/images/note.png
+ create mode 100755 _book/files/images/tip.png
+ create mode 100755 _book/files/images/warning.png
+ create mode 100644 _book/final-words.html
+ create mode 100644 _book/getting-data.html
+ create mode 100644 _book/getting-jobs.html
+ create mode 100644 _book/google.html
+ create mode 100644 _book/index.html
+ create mode 100644 _book/intro-r.html
+ create mode 100644 _book/intro.html
+ create mode 100644 _book/libs/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf
+ create mode 100644 _book/libs/gitbook-2.6.7/css/plugin-bookdown.css
+ create mode 100644 _book/libs/gitbook-2.6.7/css/plugin-fontsettings.css
+ create mode 100644 _book/libs/gitbook-2.6.7/css/plugin-highlight.css
+ create mode 100644 _book/libs/gitbook-2.6.7/css/plugin-search.css
+ create mode 100644 _book/libs/gitbook-2.6.7/css/plugin-table.css
+ create mode 100644 _book/libs/gitbook-2.6.7/css/style.css
+ create mode 100644 _book/libs/gitbook-2.6.7/js/app.min.js
+ create mode 100644 _book/libs/gitbook-2.6.7/js/jquery.highlight.js
+ create mode 100644 _book/libs/gitbook-2.6.7/js/lunr.js
+ create mode 100644 _book/libs/gitbook-2.6.7/js/plugin-bookdown.js
+ create mode 100644 _book/libs/gitbook-2.6.7/js/plugin-fontsettings.js
+ create mode 100644 _book/libs/gitbook-2.6.7/js/plugin-search.js
+ create mode 100644 _book/libs/gitbook-2.6.7/js/plugin-sharing.js
+ create mode 100644 _book/libs/jquery-2.2.3/jquery.min.js
+ create mode 100644 _book/literature.html
+ create mode 100644 _book/methods.html
+ create mode 100644 _book/organizing.html
+ create mode 100644 _book/random.html
+ create mode 100644 _book/references.html
+ create mode 100644 _book/search_index.json
+ create mode 100644 _book/style.css
+ create mode 100644 _book/tidying.html
+ create mode 100644 _book/version-control.html
+ create mode 100644 _book/visualization.html
+ create mode 100644 _bookdown.yml
+ create mode 100644 _output.yml
+ create mode 100644 book.bib
+ create mode 100644 cbds_instructors.Rproj
+ create mode 100644 cbds_instructors.log
+ create mode 100755 data/nba/championsdata.csv
+ create mode 100755 data/nba/runnerupsdata.csv
+ create mode 100644 files/00_chromebook_cheatsheet.jpeg
+ create mode 100644 files/07_visualization_geom_smooth.png
+ create mode 100755 files/images/caution.png
+ create mode 100755 files/images/important.png
+ create mode 100755 files/images/note.png
+ create mode 100755 files/images/tip.png
+ create mode 100755 files/images/warning.png
+ create mode 100755 images/by-nc-sa.png
+ create mode 100755 images/caution.png
+ create mode 100755 images/citr.png
+ create mode 100755 images/cover.jpg
+ create mode 100755 images/dedication.pdf
+ create mode 100755 images/disqus.png
+ create mode 100755 images/gitbook.png
+ create mode 100755 images/important.png
+ create mode 100755 images/knit-logo.png
+ create mode 100755 images/logo.png
+ create mode 100755 images/mathquill.png
+ create mode 100755 images/note.png
+ create mode 100755 images/tip.png
+ create mode 100755 images/warning.png
+ create mode 100644 index.Rmd
+ create mode 100644 packages.bib
+ create mode 100644 preamble.tex
+ create mode 100644 style.css
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git remote add ma[K[Kmaster[K[K[K[K[K[Korigin "https://github.com/ahdvnd/cbds-instructor-resources.git"
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git pushremote add origin "https://github.com/ahdvnd/cbds-instructor-resources.git"[C[C[C[C[C[1P[1P[1P[C[1P "https://github.com/ahdvnd/cbds-instructor-resources.git"[1P "https://github.com/ahdvnd/cbds-instructor-resources.git"[1P "https://github.com/ahdvnd/cbds-instructor-resources.git"m "https://github.com/ahdvnd/cbds-instructor-resources.git"a "https://github.com/ahdvnd/cbds-instructor-resources.git"s "https://github.com/ahdvnd/cbds-instructor-resources.git"t "https://github.com/ahdvnd/cbds-instructor-resources.git"e "https://github.com/ahdvnd/cbds-instructor-resources.git"r "https://github.com/ahdvnd/cbds-instructor-resources.git"
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git [K[K[K[Kgit clone https://github.com/ahdvnd/cbds-instructor-resources.git
+Cloning into 'cbds-instructor-resources'...
+warning: You appear to have cloned an empty repository.
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git cl[K[K[K[K[K[Kgit remote add origin "x[Khttps://github.com/ahdvnd/cbds-instructor-resources.git"
+fatal: remote origin already exists.
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git git remote -v
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git remote -v
+master	https://github.com/ahdvnd/cbds-instructor-resources.git (fetch)
+master	https://github.com/ahdvnd/cbds-instructor-resources.git (push)
+origin	https://github.com/ahdvnd/cbds-instructor-resources.git (fetch)
+origin	https://github.com/ahdvnd/cbds-instructor-resources.git (push)
+url	https://github.com/ahdvnd/cbds-instructor-resources.git (fetch)
+url	https://github.com/ahdvnd/cbds-instructor-resources.git (push)
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ gir r[K[K[K[Kit remove -[Kmaster
+git: 'remove' is not a git command. See 'git --help'.
+
+Did you mean this?
+	remote
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git rm master
+fatal: pathspec 'master' did not match any files
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git clone https://github.com/ahdvnd/cbds-instructor-resources.git
+Cloning into 'cbds-instructor-resources'...
+warning: You appear to have cloned an empty repository.
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git pu[K[K[K[K[K[Kgit add .
