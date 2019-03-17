@@ -19,6 +19,15 @@ Write an encoder function that takes a word from the user and encodes each chara
 
 
 
+str_view(names, "^M")
+str_view(names, "M$")
+
+str_detect()
+str_count()
+str_subset()
+
+
+
 ## Exercise 1: Tidying NBA Finals Data {-}
 
 In this exercise we will work with [NBA final teams stats](https://www.kaggle.com/daverosenman/nba-finals-team-stats) on Kaggle. There is two .csv files. The 'champs.csv' file contains game-by-game team totals for the championship team from every finals game between 1980 and 2017. The 'runnerups.csv' contains game-by-game team totals for the runner-up team from every finals game between 1980 and 2017. The 1980 NBA Finals was the first Finals series since the NBA added the three point line.

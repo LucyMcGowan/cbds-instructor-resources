@@ -138,6 +138,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html"><i class="fa fa-check"></i>Course 5: Introduction to R</a><ul>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-1-installing-and-uninstalling-packages"><i class="fa fa-check"></i>Exercise 1: Installing and Uninstalling Packages</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-2-using-the-script-editor"><i class="fa fa-check"></i>Exercise 2: Using the script editor</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-basic-commands-in-r"><i class="fa fa-check"></i>Exercise XX: Basic Commands in R</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-a-data-frame"><i class="fa fa-check"></i>Exercise XX: Creating a Data Frame</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-lists-in-r"><i class="fa fa-check"></i>Exercise XX: Creating Lists in R</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-4-reverse-a-string-function"><i class="fa fa-check"></i>Exercise 4: Reverse a String Function</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-5-other-short-exercises"><i class="fa fa-check"></i>Exercise 5: Other Short Exercises</a></li>
 </ul></li>
@@ -213,7 +216,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## Installing KnockKnockJokes</code></pre>
 <pre><code>## &#39;/Library/Frameworks/R.framework/Resources/bin/R&#39; --no-site-file  \
 ##   --no-environ --no-save --no-restore --quiet CMD INSTALL  \
-##   &#39;/private/var/folders/6c/94269x114tlc1x1c901c6_8m0000gn/T/RtmpBgxDis/devtools11d1c3ff9f456/psolymos-KnockKnockJokes-5096f51&#39;  \
+##   &#39;/private/var/folders/6c/94269x114tlc1x1c901c6_8m0000gn/T/Rtmp6OgbEa/devtools7a9a4e82a467/psolymos-KnockKnockJokes-5096f51&#39;  \
 ##   --library=&#39;/Library/Frameworks/R.framework/Versions/3.4/Resources/library&#39;  \
 ##   --install-tests</code></pre>
 <pre><code>## </code></pre>
@@ -223,9 +226,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">KnockKnock</span>()</code></pre>
 <pre><code>## Knock-knock!
 ##  Who&#39;s there?
-## Whale.
-##  Whale who?
-## Whale will you let me in or won&#39;t you?</code></pre>
+## Stan.
+##  Stan who?
+## Stan back, I think I&#39;m going to sneeze!</code></pre>
 <p>As an assignment (in class or at home), you can ask students to find an R package they find interesting and tell the class about it.</p>
 </div>
 <div id="exercise-2-using-the-script-editor" class="section level2 unnumbered">
@@ -233,34 +236,108 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="tip">
 <p>Level: Easy</p>
 </div>
-<p>Ask students to go to the my_music_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy_code and save it as exploratory_analysis. Ask them to install and load the package <strong>dplyr</strong> in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter. Tell your students to type in <code>2 + 2</code> in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line.</p>
-<p>str_view(names, “^M”)
-str_view(names, “M$”)</p>
-<p>str_detect()
-str_count()
-str_subset()</p>
-<p>Logicals
-cbds_names &lt;- c(“Andre”, …… “Ashley”, “Aboozar”)
-startsWith(cbds_names, “An”)
-cbds_age &lt;- c(18, ……., 36)
-any(cbds_ages &gt;= 30)
-all(cbds_ages &gt;= 17)</p>
-<p>Go to this IMDB link: <a href="https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating,desc" class="uri">https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating,desc</a>
-In this exercise we are going to create a data frame that has four columns: movie name, year, rating, genre. Create repo in github called imdb_movie_analysis and clone it to a new project on RSC. Create all the folder structure and within your code folder, create a script file called exploratory analysis. Create a data frame with these columns and enter the data from the top 10 movies. Call your data frame top_ten_movies. You can choose your own column names.
-Call the column that contains the information about the movie title
-Going back to your imdb data, What is the class of the column that contains the movie names?
-What’s the class of the column with the year the movie was made?
-What’s the difference between the maximum and minimum rating among the top 10 movies?
-What is the dimension of your data frame?
-Change the column names to this: movie_title, movie_year, movie_rating, movie_genre
-View the first 5 rows of the data frame
-Install the package skimr and using the function skim() look at the summary of the data
-Without checking manually, see if the movie “Groundhog Day” is among the top 10 movies.
-Count the number of movies that are made after your birth year.
-How many of the movies are in the genre Action.
-Create a list with three elements. First element contains your top 5 most favorite movies (as characters). The second element contains the number of states you have traveled to (as.integer). Note that each element has a different size and different class and this is the beauty of lists in R.
-Call the first element of the list (your top 5 movies)
-Replace the first row of the column movie_rating with NA. Now, what is the maximum rating in your data? Or mean?</p>
+<p>Ask students to go to the my_music_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy_code and save it as exploratory_analysis. Ask them to install and load the package <strong>dplyr</strong> in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter.</p>
+<p>Tell your students to type in <code>2 + 2</code> in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line.</p>
+<p>You can also remind them that they can select and highlight multiple line and use Ctrl+Enter. For instance, ask them to type these two lines in an R script file and highlight both line together and then use Ctrl+Enter.</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="dv">2</span>
+x <span class="op">+</span><span class="st"> </span><span class="dv">3</span></code></pre>
+<pre><code>## [1] 5</code></pre>
+</div>
+<div id="exercise-xx-basic-commands-in-r" class="section level2 unnumbered">
+<h2>Exercise XX: Basic Commands in R</h2>
+<div class="tip">
+<p>Level: Easy</p>
+</div>
+<p>In this exercise, we will perform some basic commands in R on simple vectors. First, ask your students to create an vector object called <code>ages</code> that contains the following numbers:</p>
+<pre class="sourceCode r"><code class="sourceCode r">ages &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">22</span>, <span class="dv">18</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">22</span>, <span class="dv">19</span>, <span class="dv">32</span>, <span class="dv">17</span>)</code></pre>
+<p>After giving them the above numbers and saving the object, ask your students to use an R function to find whether there is anybody who is older than 30 years old. Tell them you simply just need a TRUE/FALSE answer to this quesion. They can use the following command:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">any</span>(ages <span class="op">&gt;</span><span class="st"> </span><span class="dv">30</span>)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>Now, ask them to use an R function to find whether all ages are above 15. Again, remind them that the answer should be a simple TRUE/FALSE. They should use something like:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">all</span>(ages <span class="op">&gt;</span><span class="st"> </span><span class="dv">15</span>)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>You can further ask them to find which ages are larger than 20 For this, they can use the function <code>which()</code> to obtain the index of the element that is larger than 20 like below.</p>
+<pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">which</span>(ages <span class="op">&gt;</span><span class="st"> </span><span class="dv">20</span>)
+a</code></pre>
+<pre><code>## [1] 1 4 5 7</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">ages[a]</code></pre>
+<pre><code>## [1] 22 25 22 32</code></pre>
+</div>
+<div id="exercise-xx-creating-a-data-frame" class="section level2 unnumbered">
+<h2>Exercise XX: Creating a Data Frame</h2>
+<div class="tip">
+<p>Level: Medium</p>
+</div>
+<p>In this exercise, students will learn how to create a data frame. But since they’ve already learned how to create a repository on Github and push things to Github, ask them to create a repositiory there called movie_project. Further, ask them to clone the repository to an RStudio.cloud project with the same title. In the RStudio project, they should create all the necessary folders as they’ve learned before.</p>
+<p>We are going to create a data frame that has four columns: <code>title</code>, <code>year</code>, <code>rating</code>, and <code>genre</code> for the top 10 movies on imdb. Ask your students to go to the link <a href="https://www.imdb.com/search/title?genres=drama&amp;groups=top_250&amp;sort=user_rating">here</a>. Ask them to create an R script file in the folder called code and type their code there. Based on the information on the link, ask them to input the title, year, rating, and genre information for the top 10 movies in a data frame. Ask them to call the data frame <code>movies_df</code> They should do something like:</p>
+<pre class="sourceCode r"><code class="sourceCode r">title &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;The Shawshank Redemption&quot;</span>, <span class="st">&quot;The Godfather&quot;</span>, <span class="st">&quot;The Dark Knight&quot;</span>, <span class="st">&quot;The Godfather: Part II&quot;</span>,
+                <span class="st">&quot;The Lord of the Rings: The Return of the King&quot;</span>, <span class="st">&quot;Pulp Fiction&quot;</span>, <span class="st">&quot;Schindler&#39;s List&quot;</span>,
+                <span class="st">&quot;12 Angry Men&quot;</span>, <span class="st">&quot;Fight Club&quot;</span>, <span class="st">&quot;The Lord of the Rings: The Fellowship of the Ring&quot;</span>)
+year &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1994</span>, <span class="dv">1972</span>, <span class="dv">2008</span>, <span class="dv">1974</span>, <span class="dv">2003</span>, <span class="dv">1994</span>, <span class="dv">1993</span>, <span class="dv">1957</span>, <span class="dv">1999</span>, <span class="dv">2001</span>)
+rating &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">9.3</span>, <span class="fl">9.2</span>, <span class="fl">9.0</span>, <span class="fl">9.0</span>, <span class="fl">8.9</span>, <span class="fl">8.9</span>, <span class="fl">8.9</span>, <span class="fl">8.9</span>, <span class="fl">8.8</span>, <span class="fl">8.8</span>)
+genre &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Drama&quot;</span>, <span class="st">&quot;Crime&quot;</span>, <span class="st">&quot;Action&quot;</span>, <span class="st">&quot;Crime&quot;</span>, <span class="st">&quot;Adventure&quot;</span>, <span class="st">&quot;Crime&quot;</span>, <span class="st">&quot;Biography&quot;</span>, <span class="st">&quot;Drama&quot;</span>, <span class="st">&quot;Drama&quot;</span>, <span class="st">&quot;Adventure&quot;</span>)
+movies_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(title, year, rating, genre)</code></pre>
+<p>Now that they’ve created the data frame, ask them to show the first 4 rows of the data:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(movies_df, <span class="dv">4</span>)</code></pre>
+<pre><code>##                      title year rating  genre
+## 1 The Shawshank Redemption 1994    9.3  Drama
+## 2            The Godfather 1972    9.2  Crime
+## 3          The Dark Knight 2008    9.0 Action
+## 4   The Godfather: Part II 1974    9.0  Crime</code></pre>
+<p>Ask them to call the column that contains information about movie titles.</p>
+<pre class="sourceCode r"><code class="sourceCode r">movies_df<span class="op">$</span>title</code></pre>
+<pre><code>##  [1] The Shawshank Redemption                         
+##  [2] The Godfather                                    
+##  [3] The Dark Knight                                  
+##  [4] The Godfather: Part II                           
+##  [5] The Lord of the Rings: The Return of the King    
+##  [6] Pulp Fiction                                     
+##  [7] Schindler&#39;s List                                 
+##  [8] 12 Angry Men                                     
+##  [9] Fight Club                                       
+## [10] The Lord of the Rings: The Fellowship of the Ring
+## 10 Levels: 12 Angry Men Fight Club Pulp Fiction ... The Shawshank Redemption</code></pre>
+<p>Ask them to find the “class” of the columns year and genre:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">class</span>(movies_df<span class="op">$</span>year)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">class</span>(movies_df<span class="op">$</span>genre)</code></pre>
+<pre><code>## [1] &quot;factor&quot;</code></pre>
+<p>Ask your student to find the difference between the maximum and the minimum rating in the data.</p>
+<pre class="sourceCode r"><code class="sourceCode r">dif &lt;-<span class="st"> </span><span class="kw">max</span>(movies_df<span class="op">$</span>rating) <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(movies_df<span class="op">$</span>rating)
+dif</code></pre>
+<pre><code>## [1] 0.5</code></pre>
+<p>Then ask them to find the dimension of the data frame:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dim</span>(movies_df)</code></pre>
+<pre><code>## [1] 10  4</code></pre>
+<p>Now ask them to change the column called <code>title</code> to <code>name</code>:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">colnames</span>(movies_df)[<span class="dv">1</span>] &lt;-<span class="st"> &quot;name&quot;</span></code></pre>
+<p>Without checking manually, ask them to see if the movie “Groundhog Day” is among the top 10 movies:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">any</span>(movies_df<span class="op">$</span>name <span class="op">==</span><span class="st"> &quot;Groundhog Day&quot;</span>)</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p>Ask them to find the number of the movies are in the genre Drama:</p>
+<pre class="sourceCode r"><code class="sourceCode r">drama &lt;-<span class="st"> </span><span class="kw">which</span>(movies_df<span class="op">$</span>genre <span class="op">==</span><span class="st"> &quot;Drama&quot;</span>)
+<span class="kw">length</span>(drama)</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">d &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">movies =</span> <span class="kw">c</span>(<span class="st">&quot;m1&quot;</span>, <span class="st">&quot;m2&quot;</span>),
+     <span class="dt">states =</span> <span class="dv">4</span>)</code></pre>
+</div>
+<div id="exercise-xx-creating-lists-in-r" class="section level2 unnumbered">
+<h2>Exercise XX: Creating Lists in R</h2>
+<div class="tip">
+<p>Level: Easy</p>
+</div>
+<p>The beauty of lists are that you can have elements with different sizes and structures in them. For this exercise, ask your students to create a list with three elements. The first element called <code>places</code> should be a vector of the states (provinces) or countries your students have been to. The next element called <code>ice_cream</code> should conain the name of their top two ice cream flavors. The last element called <code>sports</code> should contain their favorite sports. The list should be called <code>about_me</code>. The code should look like:</p>
+<pre class="sourceCode r"><code class="sourceCode r">about_me &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">places =</span> <span class="kw">c</span>(<span class="st">&quot;New Mexico&quot;</span>, <span class="st">&quot;Vermont&quot;</span>, <span class="st">&quot;Washington&quot;</span>, <span class="st">&quot;California&quot;</span>),
+                 <span class="dt">ice_creams =</span> <span class="kw">c</span>(<span class="st">&quot;Vanilla&quot;</span>, <span class="st">&quot;Chocolate&quot;</span>),
+                 <span class="dt">sports =</span> <span class="kw">c</span>(<span class="st">&quot;Soccer&quot;</span>))</code></pre>
+<p>Ask them to call the first element of the list:</p>
+<pre class="sourceCode r"><code class="sourceCode r">about_me[[<span class="dv">1</span>]]</code></pre>
+<pre><code>## [1] &quot;New Mexico&quot; &quot;Vermont&quot;    &quot;Washington&quot; &quot;California&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## note that they can also call it by </span>
+about_me[[<span class="st">&quot;places&quot;</span>]]</code></pre>
+<pre><code>## [1] &quot;New Mexico&quot; &quot;Vermont&quot;    &quot;Washington&quot; &quot;California&quot;</code></pre>
+<p>Now, ask then to add another sport that they like to the element <code>sports</code>.</p>
+<pre class="sourceCode r"><code class="sourceCode r">about_me[[<span class="st">&quot;sports&quot;</span>]][[<span class="dv">2</span>]] &lt;-<span class="st"> &quot;Volleyball&quot;</span></code></pre>
 </div>
 <div id="exercise-4-reverse-a-string-function" class="section level2 unnumbered">
 <h2>Exercise 4: Reverse a String Function</h2>
@@ -374,19 +451,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

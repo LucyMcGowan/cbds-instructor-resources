@@ -69,45 +69,213 @@ As an assignment (in class or at home), you can ask students to find an R packag
 Level: Easy
 </div>
 
-Ask students to go to the my_music_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy_code and save it as exploratory_analysis. Ask them to install and load the package **dplyr** in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter. Tell your students to type in `2 + 2` in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line. 
+Ask students to go to the my_music_project on RStudio.cloud that they previously created. Ask them to create a new R script file in the folder code/tidy_code and save it as exploratory_analysis. Ask them to install and load the package **dplyr** in the beginning of the file. One of the nice things about RStudio is its keyboard shortcuts. One that is used a lot is Ctrl+Enter.
+
+Tell your students to type in `2 + 2` in the script file and while the cursor is on that line, hold the Ctrl (Command) key and then press Enter (or Return). What happens? Ctrl+Enter is used for running code without clicking on the Run tab. It makes running codes line by line a lot easier. As long as the cursor is somewhere on the line, Ctrl+Enter will run that line. 
+
+You can also remind them that they can select and highlight multiple line and use Ctrl+Enter. For instance, ask them to type these two lines in an R script file and highlight both line together and then use Ctrl+Enter.
+
+```{r}
+x <- 2
+x + 3
+```
+
+
+## Exercise XX: Basic Commands in R {-}
+
+<div class = "tip">
+Level: Easy
+</div>
+
+In this exercise, we will perform some basic commands in R on simple vectors. First, ask your students to create an vector object called `ages` that contains the following numbers:
+
+```{r}
+ages <- c(22, 18, 20, 25, 22, 19, 32, 17)
+```
+
+After giving them the above numbers and saving the object, ask your students to use an R function to find whether there is anybody who is older than 30 years old. Tell them you simply just need a TRUE/FALSE answer to this quesion. They can use the following command:
+
+```{r}
+any(ages > 30)
+```
+
+Now, ask them to use an R function to find whether all ages are above 15. Again, remind them that the answer should be a simple TRUE/FALSE. They should use something like:
+
+
+```{r}
+all(ages > 15)
+```
+
+You can further ask them to find which ages are larger than 20 For this, they can use the function `which()` to obtain the index of the element that is larger than 20 like below.
+
+```{r}
+a <- which(ages > 20)
+a
+ages[a]
+```
 
 
 
+## Exercise XX: Creating a Data Frame {-}
 
+<div class = "tip">
+Level: Medium
+</div>
 
-str_view(names, "^M")
-str_view(names, "M$")
+In this exercise, students will learn how to create a data frame. But since they've already learned how to create a repository on Github and push things to Github, ask them to create a repositiory there called movie_project. Further, ask them to clone the repository to an RStudio.cloud project with the same title. In the RStudio project, they should create all the necessary folders as they've learned before.
 
-str_detect()
-str_count()
-str_subset()
+We are going to create a data frame that has four columns: `title`, `year`, `rating`, and `genre` for the top 10 movies on imdb. Ask your students to go to the link [here](https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating). Ask them to create an R script file in the folder called code and type their code there. Based on the information on the link, ask them to input the title, year, rating, and genre information for the top 10 movies in a data frame. Ask them to call the data frame `movies_df` They should do something like:
 
+```{r}
+title <- c("The Shawshank Redemption", "The Godfather", "The Dark Knight", "The Godfather: Part II",
+                "The Lord of the Rings: The Return of the King", "Pulp Fiction", "Schindler's List",
+                "12 Angry Men", "Fight Club", "The Lord of the Rings: The Fellowship of the Ring")
+year <- c(1994, 1972, 2008, 1974, 2003, 1994, 1993, 1957, 1999, 2001)
+rating <- c(9.3, 9.2, 9.0, 9.0, 8.9, 8.9, 8.9, 8.9, 8.8, 8.8)
+genre <- c("Drama", "Crime", "Action", "Crime", "Adventure", "Crime", "Biography", "Drama", "Drama", "Adventure")
+movies_df <- data.frame(title, year, rating, genre)
+```
 
-Logicals
-cbds_names <- c(“Andre”, …… “Ashley”, “Aboozar”)
-startsWith(cbds_names, “An”)
-cbds_age <- c(18, ……., 36)
-any(cbds_ages >= 30)
-all(cbds_ages >= 17)
+Now that they've created the data frame, ask them to show the first 4 rows of the data:
 
+```{r}
+head(movies_df, 4)
+```
 
-Go to this IMDB link: https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating,desc
-In this exercise we are going to create a data frame that has four columns: movie name, year, rating, genre. Create repo in github called imdb_movie_analysis and clone it to a new project on RSC. Create all the folder structure and within your code folder, create a script file called exploratory analysis. Create a data frame with these columns and enter the data from the top 10 movies. Call your data frame top_ten_movies. You can choose your own column names.
-Call the column that contains the information about the movie title
-Going back to your imdb data, What is the class of the column that contains the movie names?
-What’s the class of the column with the year the movie was made?
-What’s the difference between the maximum and minimum rating among the top 10 movies?
-What is the dimension of your data frame?
-Change the column names to this: movie_title, movie_year, movie_rating, movie_genre
-View the first 5 rows of the data frame
-Install the package skimr and using the function skim() look at the summary of the data
-Without checking manually, see if the movie “Groundhog Day” is among the top 10 movies.
-Count the number of movies that are made after your birth year.
-How many of the movies are in the genre Action.
-Create a list with three elements. First element contains your top 5 most favorite movies (as characters). The second element contains the number of states you have traveled to (as.integer). Note that each element has a different size and different class and this is the beauty of lists in R.
-Call the first element of the list (your top 5 movies)
-Replace the first row of the column movie_rating with NA. Now, what is the maximum rating in your data? Or mean?
+Ask them to call the column that contains information about movie titles. 
 
+```{r}
+movies_df$title
+```
+
+Ask them to find the "class" of the columns year and genre:
+
+```{r}
+class(movies_df$year)
+class(movies_df$genre)
+```
+
+Ask your student to find the difference between the maximum and the minimum rating in the data.
+
+```{r}
+dif <- max(movies_df$rating) - min(movies_df$rating)
+dif
+```
+
+Then ask them to find the dimension of the data frame:
+
+```{r}
+dim(movies_df)
+```
+
+Now ask them to change the column called `title` to `name`:
+
+```{r}
+colnames(movies_df)[1] <- "name"
+```
+
+Without checking manually, ask them to see if the movie “Groundhog Day” is among the top 10 movies:
+
+```{r}
+any(movies_df$name == "Groundhog Day")
+```
+
+Ask them to find the number of the movies are in the genre Drama:
+
+```{r}
+drama <- which(movies_df$genre == "Drama")
+length(drama)
+```
+
+```{r}
+d <- list(movies = c("m1", "m2"),
+     states = 4)
+```
+
+## Exercise XX: Creating Lists in R {-}
+
+<div class = "tip">
+Level: Easy
+</div>
+
+The beauty of lists are that you can have elements with different sizes and structures in them. For this exercise, ask your students to create a list with three elements. The first element called `places` should be a vector of the states (provinces) or countries your students have been to. The next element called `ice_cream` should conain the name of their top two ice cream flavors. The last element called `sports` should contain their favorite sports. The list should be called `about_me`. The code should look like:
+
+```{r}
+about_me <- list(places = c("New Mexico", "Vermont", "Washington", "California"),
+                 ice_creams = c("Vanilla", "Chocolate"),
+                 sports = c("Soccer"))
+```
+
+Ask them to call the first element of the list:
+
+```{r}
+about_me[[1]]
+## note that they can also call it by 
+about_me[["places"]]
+```
+
+Now, ask then to add another sport that they like to the element `sports`.
+
+```{r}
+about_me[["sports"]][[2]] <- "Volleyball"
+```
+
+## Exercise XX: Missing Values in R {-}
+
+<div class = "tip">
+Level: Moderate
+</div>
+
+Ask your students to load the `airquality` dataset in R. Ask them to show the columns that exist in the data and find the dimension of the data.
+
+```{r}
+colnames(airquality)
+dim(airquality)
+```
+
+Ask them to look at the first 10 rows of the data:
+
+```{r}
+head(airquality, 10)
+```
+
+Do they see any missing values in the first 10 rows? They should answer yes as the the first 10 rows clearly has some missing values. Now, ask them to use the appropriate function that checks whether the column `Temp` has missing values. How about the column `Ozone`?
+
+```{r}
+any(is.na(airquality$Temp))
+any(is.na(airquality$Ozone))
+```
+
+The column Ozone, contains mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island. What rows in the column `Ozone` have missing values
+
+```{r}
+which(is.na(airquality$Ozone))
+```
+
+Now, ask your students to use the appropriate function to calculate the average of the column `Ozone`.
+
+```{r}
+mean(airquality$Ozone)
+```
+
+If they use the code above, the answer will be `NA`. Tell them that this is due to the missing values in the column and because of that, the function `mean()` does not calculate the average. For this, to see the average, they will have to use the argument `na.rm` and set it to `TRUE`. By doing this, they will tell R to ignore the missing values and only perform the function on the non-missing values.
+
+```{r}
+mean(airquality$Ozone, na.rm = TRUE)
+```
+
+Now, ask them to remove all the rows containing missing values from the entire data and save the new object as `airquality_nomissing`. Note that they should use the function `na.omit()`. What is the dimension of the new data?
+
+```{r}
+airquality_nomissing <- na.omit(airquality)
+dim(airquality_nomissing)
+```
+
+Finally, ask them to write code that will replace all values of the column `Wind` that are equal to `8.0` with `NA`.
+
+```{r}
+airquality$Wind[airquality$Wind == 8.0] <- NA
+```
 
 ## Exercise 4: Reverse a String Function {-}
 

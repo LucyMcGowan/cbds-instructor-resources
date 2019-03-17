@@ -365,3 +365,22 @@ To https://github.com/ahdvnd/cbds-instructor-resources.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git add .
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git commit -m "changed read [Kme"
+[master 287e1f6] changed readme
+ 5 files changed, 51 insertions(+), 2 deletions(-)
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/C4222F16
+ create mode 100644 .Rproj.user/98065216/sources/s-8431E330/C4222F16-contents
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git u[Kpush
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 3.02 KiB | 0 bytes/s, done.
+Total 12 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5)   [Kremote: Resolving deltas:  40% (2/5)   [Kremote: Resolving deltas:  60% (3/5)   [Kremote: Resolving deltas:  80% (4/5)   [Kremote: Resolving deltas: 100% (5/5)   [Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/jhudsl/cbds-instructor-resources.git[K
+To https://github.com/ahdvnd/cbds-instructor-resources.git
+   13c3782..287e1f6  master -> master
+[KAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git pull
+Already up-to-date.
+]0;~/Google Drive/Research/cbds_instructorsAboozars-MacBook-Pro:cbds_instructors Hadzzz$ git c[Kadd. [K[K .
